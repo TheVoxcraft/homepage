@@ -23,7 +23,7 @@ parse_str($postdata, $params);
 //fwrite($log, date("Y-m-d H:i:s") . $postdata . "\r\n");
 
 // change directory to /home/pi/homepage/
-chdir('/home/pi/homepage/');
+//chdir('/home/pi/homepage/');
 
 // run bash script and return output
 $output = exec('cd /home/pi/homepage/ && /usr/bin/bash /home/pi/homepage/deploy.sh >> /var/www/logs/log.txt');
