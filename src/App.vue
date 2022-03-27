@@ -18,7 +18,7 @@ import HomepageContent from './components/HomepageContent.vue'
   </div>
   <footer>
     <div class="wrapper">
-      <p>© 2022 Jonas L. S. Silva</p>
+      <p>© 2022 Jonas Silva</p>
     </div>
   </footer>
 </template>
