@@ -23,7 +23,7 @@ parse_str($postdata, $params);
 //fwrite($log, date("Y-m-d H:i:s") . $postdata . "\r\n");
 
 // run bash script
-$output = shell_exec('(cd /var/www/repos/homepage/ && /usr/bin/bash /var/www/repos/homepage/deploy.sh) &>> /var/www/logs/log.txt &');
+$output = exec('(cd /var/www/repos/homepage/ && /usr/bin/bash /var/www/repos/homepage/deploy.sh) &>> /var/www/logs/log.txt &');
 
 fwrite($log, date("Y-m-d H:i:s") . $output . "\r\n");
 fclose($log);
